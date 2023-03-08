@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="myHW1.js"></script>
+  <title>Lesson1_hw</title>
+</head>
+<body>
+  <h1>Hello JS</h1>
+  <p>
+    Домашня робота: <br>
+    1. Створити калькулятор знижок, отримати від користувача ціну товара і в консоль вивести інформацію про знижку при покупці 10 товарів ( знижка 3%) 
+    інформацію при покупці 20 товарів ( знижка 5%) <br>
+    <br>
+    var price = prompt ('Вкажіть ціну товару: ' + 'грн');
+    <br>
+    console.log(price); <br>
+    <br>
+    var discount3 = 10 * 0.03; <br>
+    var price3 = parseInt(price) * discount3;<br>
+    alert('Ціна за покупку 10 товарів, знижка 3%' + ' - ' + price3 + ' грн'); <br>
+    console.log(price3); <br>
+    <br>
+    var discount5 = 20 * 0.05; <br>
+    var price5 = parseInt(price) * discount5; <br>
+    alert('Ціна за покупку 20 товарів, знижка 5%' + ' - ' + price5 + ' грн'); <br>
+    console.log(price5);
+  </p>
+  <br>
+  <p>
+    2. Отримати від користувача розміри сторін прямокутника і вивести в консоль значення площі прямокутника ( це математична формула одна сторона * на іншу сторону). <br>
+    <br>
+    let width = prompt ('Вкажіть ширину прямокутника: ' + ' см'); <br>
+    console.log(width); <br>
+    <br>
+    let height = prompt ('Вкажіть висоту прямокутника: ' + ' см'); <br>
+    console.log(height); <br>
+    <br>
+    let rectangleS = parseInt(width) * parseInt(height); <br>
+    alert(rectangleS + ' см площа прямокутника;'); <br>
+    console.log(rectangleS);
+  </p>
+  <br>
+  <p>
+    3. Самостійно порівняти за допомогою == і ===  різні типи данних і розглянути результат. <br>
+    <br>
+    == <br>
+    let myAge1 = '30'; <br>
+    let myAge2 = 30; <br>
+    <br>
+    console.log(myAge1 == myAge2); <br>
+    true <br>
+    <br>
+    var myType1 = 'One hundred'; <br>
+    var myType2 = 100; <br>
+    <br>
+    console.log(myType1 == myType2); <br>
+    false <br>
+    <br>
+    const myHome1 = 'Kiev'; <br>
+    const myHome2 = 'Ukraine'; <br>
+    <br>
+    console.log(myHome1 == myHome2); <br>
+    false <br>
+    <br>
+    let myTrip1 = 25; <br>
+    let myTrip2 = 25; <br>
+    <br>
+    console.log(myTrip1 == myTrip2); <br>
+    true <br>
+    <br>
+    === <br>
+    let myAge3 = '10'; <br>
+    let myAge4 = 10; <br>
+    <br>
+    console.log(myAge3 === myAge4); <br>
+    false <br>
+    <br>
+    var myType3 = 'Ten'; <br>
+    var myType4 = 10; <br>
+    <br>
+    console.log(myType3 === myType4); <br>
+    false <br>
+    <br>
+    const myHome3 = 'Lviv'; <br>
+    const myHome4 = 'Ukraine'; <br>
+    <br>
+    console.log(myHome3 === myHome4); <br>
+    false <br>
+    <br>
+    let myTrip3 = 50; <br>
+    let myTrip4 = 50; <br>
+    <br>
+    console.log(myTrip3 === myTrip4); <br>
+    true
+  </p>
+  <br>
+</body>
+</html>
